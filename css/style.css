@@ -560,7 +560,8 @@ button {
 .hero-text {
   position: absolute;
   bottom: 2.5rem;
-  left: 27.8rem;
+  left: 50%;
+  transform: translateX(-41.5%);
   z-index: 2;
   text-align: left;
 }
@@ -580,6 +581,7 @@ button {
     text-align: left;
     bottom: 1.5rem;
     left: 2.2rem;
+    transform: none;
 
   }
   .hero-text p{
