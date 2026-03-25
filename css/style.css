@@ -2,11 +2,14 @@
    CSS Variables
 ======================================== */
 
-@media screen and (min-width: 768px)  {
+@media screen and (min-width: 768px) and (max-width: 1199px)  {
             html {
                 font-size: calc(1600 / 1280 * 1vw);
             }
         }
+        @media screen and (min-width: 1200px) {
+    html { font-size: 15px; }
+}
         @media screen and (max-width: 767px)  {
             html {
                 font-size: calc(1600 / 384 * 1vw);
@@ -325,7 +328,7 @@ button {
   order: 1;
 }
 
-@media (min-width: 101.5rem) {
+@media (min-width: 768px) {
   .header-nav {
     display: block;
   }
@@ -369,7 +372,7 @@ button {
   order: 1; /* 左側に配置 */
 }
 
-@media (min-width: 101.5rem) {
+@media (min-width: 767px) {
   .hamburger {
     display: none;
   }
