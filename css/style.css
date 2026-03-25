@@ -519,7 +519,10 @@ button {
 
 @media (min-width: 768px) {
   .hero {
-    min-height: 43.75rem;
+    min-height: 52.75rem;
+  }
+  .pc-non {
+    display: none;
   }
 }
 
@@ -553,15 +556,17 @@ button {
 
 .hero-text {
   position: absolute;
-  bottom: 1.5rem;
-  left: 2.2rem;
+  bottom: 2.5rem;
+  left: 27.8rem;
   z-index: 2;
   text-align: left;
 }
 .hero-text {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
-
+.hero-text p {
+  line-height: 2.1;
+}
 .hero-text p {
   font-family: 'Zen Maru Gothic', sans-serif;
   color: var(--color-primary);
@@ -570,6 +575,9 @@ button {
 @media (max-width: 767px) {
   .hero-text {
     text-align: left;
+    bottom: 1.5rem;
+    left: 2.2rem;
+
   }
   .hero-text p{
     font-size: 0.9rem;
@@ -577,7 +585,6 @@ button {
     margin-bottom: 0.8rem;
   }
 }
-
 
 .hero-image-wrapper {
   position: relative;
@@ -590,11 +597,10 @@ button {
   right: -6rem;
 }
 
-
-
 @media (min-width: 768px) {
   .hero-image-wrapper {
-    height: 31.25rem;
+    height: 35.25rem;
+    width: 44%;
   }
 }
 
@@ -614,14 +620,15 @@ button {
   color: var(--color-cta);
   text-align: left;
   position: absolute;
-  top: -9rem;
+  top: -8.5rem;
   left: -10rem;
-  width: 20rem;
+  width: 31rem;
 }
 
 @media (min-width: 768px) {
   .hero-title {
     font-size: var(--font-size-h1-pc);
+    top: -10rem;
   }
 }
 
@@ -810,8 +817,8 @@ button {
 
 @media (min-width: 768px) {
   .features-arrow {
-    width: 160px;
-    height: 160px;
+    width: 6rem;
+    height: 6rem;
     top: 3rem;
   }
 }
@@ -962,7 +969,7 @@ button {
   box-shadow: none;
   display: flex;
   gap: 0.7rem;
-  align-items: flex-start;
+  align-items: center;
   transition: border-color 0.3s ease;
 }
 
@@ -998,9 +1005,17 @@ button {
   font-weight: var(--font-weight-semibold); /* 600 (Notion風) */
   line-height: 1.4;
   letter-spacing: var(--letter-spacing-normal); /* -0.01em */
-  margin-bottom: var(--spacing-xs);
+  /* margin-bottom: var(--spacing-xs); */
   color: var(--color-primary);
+  min-width: 4rem;
 }
+
+@media (min-width: 768px){
+  .flow-title {
+    min-width: 8rem;
+  }
+}
+
 
 .flow-text {
   font-size: 0.8rem;
@@ -1092,10 +1107,19 @@ button {
   background-color: var(--color-bg-light-beige);
 }
 
+
 .pricing-table tbody td:first-child {
-  text-align: left;
+  text-align: center;
   font-weight: 500;
 }
+
+@media (min-width: 768px) {
+  .pricing-table tbody td:first-child {
+    text-align: center;
+    font-weight: 500;
+  }
+}
+
 
 .pricing-table strong {
   color: var(--color-accent);
@@ -1836,8 +1860,60 @@ body {
    SPフローティングタブ（767px以下のみ表示）
 ======================================== */
 .float-tabs {
-  display: none;
+  /* display: none; */
 }
+
+.float-tabs {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    justify-content: space-between;
+    pointer-events: none;
+    z-index: 500;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.float-tabs.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .float-tab {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    padding: 4.6rem 1rem;
+    border: none;
+    color: #fff;
+    font-family: var(--font-japanese);
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+
+  /* 左タブ（脱毛）：右側に丸み */
+  .float-tab--hair {
+    background: #0F2742;
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+
+  /* 右タブ（シミ取り）：左側に丸み */
+  .float-tab--spot {
+    background: #8b0000;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  /* 現在表示中のタブは薄く（押せないことを示す） */
+  .float-tab.is-active {
+    opacity: 0.4;
+    cursor: default;
+    pointer-events: none;
+  }
 
 @media screen and (max-width: 767px) {
   .float-tabs {

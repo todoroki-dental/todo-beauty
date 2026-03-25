@@ -165,9 +165,9 @@
         </div>
         <div class="hero-text">
           <!-- <ul class="concerns-list"> -->
-          <p style="color: #201f1f;">美容クリニックは<br>少し不安</p>
-          <p style="color: #201f1f;">自己処理の時間が<br>もったいない</p>
-          <p style="color: #2A2A2A;">送り迎えの<br>合間に通いたい</p>
+          <p style="color: #201f1f;">美容クリニックは<br class="pc-non">少し不安</p>
+          <p style="color: #201f1f;">自己処理の時間が<br class="pc-non">もったいない</p>
+          <p style="color: #2A2A2A;">送り迎えの<br class="pc-non">合間に通いたい</p>
           <p style="color: #2A2A2A;">痛みや肌トラブルが心配</p>
           <p style="color: #2A2A2A;">須坂市内で信頼できるところを探している</p>
         <!-- </ul> -->
@@ -1534,7 +1534,7 @@
         floatTabTimer = setTimeout(function() {
           floatTabEl.classList.remove('is-visible');
           floatTabEl.setAttribute('aria-hidden', 'true');
-        }, 2000);
+        }, 2500);
       }
       window.addEventListener('scroll', showFloatTabs, { passive: true });
 
