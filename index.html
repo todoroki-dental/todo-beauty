@@ -19,7 +19,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Sans+JP:wght@300;400;500&family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap" rel="stylesheet">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
@@ -81,22 +81,31 @@
   <!-- ヘッダー（固定） -->
   <header class="header">
     <div class="header-container">
-      <div class="header-logo">
-        <a href="/">医療法人公仁会<br>轟病院</a>
-      </div>
-
-      <!-- ナビゲーション（PC） -->
+      <!-- 左: PCナビゲーション（PC表示） -->
       <nav class="header-nav">
         <ul class="nav-list">
           <li><a href="#concerns" class="nav-link">お悩み</a></li>
           <li><a href="#about-medical" class="nav-link">医療脱毛とは</a></li>
           <li><a href="#features" class="nav-link">特徴</a></li>
           <li><a href="#pricing" class="nav-link">料金</a></li>
-          <li><a href="#faq" class="nav-link">よくある質問</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
           <li><a href="#access" class="nav-link">アクセス</a></li>
         </ul>
       </nav>
 
+      <!-- 左: ハンバーガーメニューボタン（SP表示） -->
+      <button class="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <!-- 中央: ロゴ -->
+      <div class="header-logo">
+        <a href="/">医療法人公仁会 轟病院<br>医療脱毛・シミ取り</a>
+      </div>
+
+      <!-- 右: 電話 -->
       <div class="header-tel">
         <a href="tel:026-245-0126" class="tel-link">
           <svg class="tel-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -105,13 +114,6 @@
           <span class="tel-number">026-245-0126</span>
         </a>
       </div>
-
-      <!-- ハンバーガーメニューボタン（SP） -->
-      <button class="hamburger" aria-label="メニューを開く" aria-expanded="false">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-      </button>
     </div>
 
     <!-- スマホメニュー -->
@@ -143,26 +145,121 @@
   <main>
     <!-- ファーストビュー -->
     <section class="hero">
-      <div class="hero-bg">
-        <img src="images/hero-bg.jpg" alt="須坂市の医療脱毛 轟病院" class="hero-image">
-      </div>
-      <div class="hero-content">
-        <h1 class="hero-title">須坂市の医療脱毛<br>医療法人公仁会 轟病院</h1>
-        <p class="hero-subtitle">形成外科専門医・皮膚科専門医在籍</p>
-        <p class="hero-access">須坂駅徒歩7分・駐車場15台完備</p>
-        <div class="hero-cta">
-          <a href="tel:026-245-0126" class="cta-button">
-            <span class="cta-label">相談無料</span>
-            <span class="cta-tel">026-245-0126</span>
-          </a>
+      <div class="container hero-container">
+        <!-- 左: テキストコンテンツ -->
+        <div class="hero-content">
+          <h1 class="hero-title">普通の病院で<br>できる<br>医療脱毛・しみ取り</h1>
+          <!-- <p class="hero-subtitle">須坂市の医療脱毛<br>轟病院</p> -->
+          <!-- <p class="hero-access">須坂駅徒歩7分・駐車場15台完備</p> -->
+          <div class="hero-cta">
+            <!-- <a href="tel:026-245-0126" class="cta-button">
+              <span class="cta-label">相談無料</span>
+              <span class="cta-tel">026-245-0126</span>
+            </a> -->
+          </div>
+        </div>
+
+        <!-- 右: 画像 -->
+        <div class="hero-image-wrapper">
+          <img src="images/kv.png" alt="須坂市の医療脱毛 轟病院" class="hero-image">
+        </div>
+        <div class="hero-text">
+          <!-- <ul class="concerns-list"> -->
+          <p style="color: #201f1f;">美容クリニックは<br>少し不安</p>
+          <p style="color: #201f1f;">自己処理の時間が<br>もったいない</p>
+          <p style="color: #2A2A2A;">送り迎えの<br>合間に通いたい</p>
+          <p style="color: #2A2A2A;">痛みや肌トラブルが心配</p>
+          <p style="color: #2A2A2A;">須坂市内で信頼できるところを探している</p>
+        <!-- </ul> -->
         </div>
       </div>
     </section>
 
-    <!-- お悩み共感パート -->
-    <section class="concerns section">
+<!-- 当院の特徴 -->
+    <section class="features section">
       <div class="container">
-        <h2 class="section-title">こんなお悩みはありませんか？</h2>
+        <!-- <p class="section-english-title">WHY CHOOSE US</p> -->
+        <img src="images/arrow-1.svg" alt="" class="features-arrow" aria-hidden="true">
+        <h2 class="section-title" style="font-family: 'Zen Maru Gothic', sans-serif;">そのお悩み<br>当院で解決できるかもしれません</h2>
+        <div class="features-grid">
+
+          <div class="feature-card">
+            <div class="feature-icon-circle">
+              <svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M38 18v6c0 7.732-6.268 14-14 14s-14-6.268-14-14v-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 18a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM38 18a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="24" cy="42" r="4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M24 38V32" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">形成外科専門医<br>皮膚科専門医在籍</h3>
+            <p class="feature-text">山梨大学形成外科の形成外科専門医が診察・実施します。皮膚科専門医が在籍しているので、肌トラブルにも総合的に対応できる体制を整えています。</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-circle">
+              <svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M24 6l4.5 13.5H42l-10.5 7.5 4.5 13.5L24 33l-12 7.5 4.5-13.5L6 19.5h13.5L24 6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="10" cy="10" r="2" fill="currentColor"/>
+                <circle cx="38" cy="10" r="2" fill="currentColor"/>
+                <circle cx="42" cy="30" r="1.5" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">痛みの少ない蓄熱式脱毛機<br>「MedioStar」</h3>
+            <p class="feature-text">Asclepion社製MedioStarを使用。蓄熱式(SHR式)で従来のショット打ちより痛みを軽減。痛みが心配な方も安心です。</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-circle">
+              <svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="10" y="10" width="28" height="32" rx="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M24 16v12M18 22h12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="16" y="34" width="4" height="8" stroke="currentColor" stroke-width="2"/>
+                <rect x="28" y="34" width="4" height="8" stroke="currentColor" stroke-width="2"/>
+                <path d="M10 42h28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">地域密着・通いやすい立地</h3>
+            <p class="feature-text">須坂駅徒歩7分、駐車場15台完備。須坂市内で通いやすく、平日診療で主婦の方も子育ての合間に通院しやすい環境です。</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-circle">
+              <svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="8" y="12" width="32" height="28" rx="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 20h32M16 8v8M32 8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="16" cy="28" r="1.5" fill="currentColor"/>
+                <circle cx="24" cy="28" r="1.5" fill="currentColor"/>
+                <circle cx="32" cy="28" r="1.5" fill="currentColor"/>
+                <circle cx="16" cy="34" r="1.5" fill="currentColor"/>
+                <circle cx="24" cy="34" r="1.5" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">予約制で待ち時間最小限</h3>
+            <p class="feature-text">初回相談は月曜日9:00-12:00、15:00-17:00。施術は平日9:00-12:00、15:00-17:00に実施。予約制のため、待ち時間を最小限に抑えられます。</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-circle">
+              <svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="24" cy="14" r="4" stroke="currentColor" stroke-width="2"/>
+                <path d="M16 40v-8c0-2.21 1.79-4 4-4h8c2.21 0 4 1.79 4 4v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="18" r="3" stroke="currentColor" stroke-width="2"/>
+                <circle cx="36" cy="18" r="3" stroke="currentColor" stroke-width="2"/>
+                <path d="M6 40v-6c0-1.66 1.34-3 3-3h2M42 40v-6c0-1.66-1.34-3-3-3h-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">未成年の方も保護者同意で対応可能</h3>
+            <p class="feature-text">保護者の方の同意があれば、未成年の方も施術を受けられます。お子様の肌トラブルもお気軽にご相談ください。</p>
+          </div>
+
+        </div>
+
+    <!-- お悩み共感パート -->
+    <!-- <section class="concerns section">
+      <div class="container">
+        <p class="section-english-title">YOUR CONCERNS</p>
+        <h2 class="section-title">そんなお悩み　当院で解決できるかもしれません</h2>
         <ul class="concerns-list">
           <li class="concerns-item">自己処理の時間がもったいない</li>
           <li class="concerns-item">子どもの送り迎えの合間に通いたい</li>
@@ -171,11 +268,12 @@
           <li class="concerns-item">須坂市内で信頼できるところを探している</li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <!-- 医療脱毛とは -->
-    <section class="about-medical section">
+    <!-- <section class="about-medical section">
       <div class="container">
+        <p class="section-english-title">MEDICAL VS SALON</p>
         <h2 class="section-title">医療脱毛とエステ脱毛の違い</h2>
         <p class="section-lead">医療脱毛は医療機関でのみ行える施術です。エステ脱毛とは目的や効果が異なります。</p>
         <div class="comparison-table-wrapper">
@@ -183,14 +281,14 @@
             <thead>
               <tr>
                 <th>項目</th>
-                <th class="highlight">医療脱毛</th>
+                <th class="highlight" style="color: #0F2742;">医療脱毛</th>
                 <th>エステ脱毛</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>実施場所</td>
-                <td class="highlight">医療機関のみ</td>
+                <td class="highlight" >医療機関のみ</td>
                 <td>エステサロン</td>
               </tr>
               <tr>
@@ -222,99 +320,83 @@
           </table>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- 当院の特徴 -->
-    <section class="features section">
-      <div class="container">
-        <h2 class="section-title">轟病院の医療脱毛が選ばれる理由</h2>
-        <div class="features-grid">
-
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M38 18v6c0 7.732-6.268 14-14 14s-14-6.268-14-14v-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M10 18a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM38 18a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="24" cy="42" r="4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M24 38V32" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <h3 class="feature-title">形成外科専門医監修<br>皮膚科専門医在籍</h3>
-            <p class="feature-text">山梨大学形成外科の形成外科専門医が監修し、野平真理子 皮膚科専門医が在籍。肌トラブルにも医学的に対応できる体制を整えています。</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M24 6l4.5 13.5H42l-10.5 7.5 4.5 13.5L24 33l-12 7.5 4.5-13.5L6 19.5h13.5L24 6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="10" cy="10" r="2" fill="currentColor"/>
-                <circle cx="38" cy="10" r="2" fill="currentColor"/>
-                <circle cx="42" cy="30" r="1.5" fill="currentColor"/>
-              </svg>
-            </div>
-            <h3 class="feature-title">痛みの少ない蓄熱式脱毛機<br>「Mediostar」</h3>
-            <p class="feature-text">Asclepion社製Mediostarを使用。蓄熱式で従来より痛みを軽減。表面麻酔も対応可能ですので、痛みが心配な方も安心です。</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="10" y="10" width="28" height="32" rx="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M24 16v12M18 22h12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <rect x="16" y="34" width="4" height="8" stroke="currentColor" stroke-width="2"/>
-                <rect x="28" y="34" width="4" height="8" stroke="currentColor" stroke-width="2"/>
-                <path d="M10 42h28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <h3 class="feature-title">地域密着・通いやすい立地</h3>
-            <p class="feature-text">須坂駅徒歩7分、駐車場15台完備。須坂市内で通いやすく、平日診療で主婦の方も子育ての合間に通院しやすい環境です。</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="8" y="12" width="32" height="28" rx="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8 20h32M16 8v8M32 8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="16" cy="28" r="1.5" fill="currentColor"/>
-                <circle cx="24" cy="28" r="1.5" fill="currentColor"/>
-                <circle cx="32" cy="28" r="1.5" fill="currentColor"/>
-                <circle cx="16" cy="34" r="1.5" fill="currentColor"/>
-                <circle cx="24" cy="34" r="1.5" fill="currentColor"/>
-              </svg>
-            </div>
-            <h3 class="feature-title">予約制で待ち時間最小限</h3>
-            <p class="feature-text">初回相談は月曜日9:00-12:00、15:00-17:00。施術は平日9:00-12:00、15:00-17:00に実施。予約制のため、待ち時間を最小限に抑えられます。</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <circle cx="24" cy="14" r="4" stroke="currentColor" stroke-width="2"/>
-                <path d="M16 40v-8c0-2.21 1.79-4 4-4h8c2.21 0 4 1.79 4 4v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="12" cy="18" r="3" stroke="currentColor" stroke-width="2"/>
-                <circle cx="36" cy="18" r="3" stroke="currentColor" stroke-width="2"/>
-                <path d="M6 40v-6c0-1.66 1.34-3 3-3h2M42 40v-6c0-1.66-1.34-3-3-3h-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <h3 class="feature-title">未成年の方も保護者同意で対応可能</h3>
-            <p class="feature-text">保護者の方の同意があれば、未成年の方も施術を受けられます。お子様の肌トラブルもお気軽にご相談ください。</p>
-          </div>
-
+        <!-- サービス切り替えタブ -->
+        <div class="service-tabs" id="service-tabs">
+          <button class="service-tab service-tab--hair active" data-tab="hair">脱毛はこちら</button>
+          <button class="service-tab service-tab--spot" data-tab="spot">しみ取りはこちら</button>
         </div>
 
-        <!-- CTA（特徴セクション後） -->
-        <div class="section-cta">
-          <a href="tel:026-245-0126" class="cta-button">
-            <span class="cta-label">お電話でご予約・ご相談</span>
-            <span class="cta-tel">026-245-0126</span>
-          </a>
-        </div>
+        <!-- 脱毛タブパネル：キーワード＋CTA -->
+        <div data-tab-panel="hair">
+          <section class="keywords section" style="background-color: #f5f5f3;">
+            <div class="container">
+              <p class="section-english-title">KEYWORD</p>
+              <h2 class="section-title">キーワードから探す</h2>
+              <div class="keyword-tags">
+                <a href="#pricing"><span class="keyword-tag">#脱毛料金</span></a>
+                <!-- <a href="#pricing"><span class="keyword-tag">#シミ取り料金</span></a> -->
+                <!-- <a href="#pricing"><span class="keyword-tag">#ほくろ取り料金</span></a> -->
+                <a href="#flow"><span class="keyword-tag">#治療の流れ</span></a>
+                <a href="#access"><span class="keyword-tag">#場所</span></a>
+                <a href="#pricing"><span class="keyword-tag">#相談日時</span></a>
+                <a href="#doctors"><span class="keyword-tag">#医師について</span></a>
+                <a href="#laser-equipment"><span class="keyword-tag">#レーザー機器</span></a>
+                <a href="#faq"><span class="keyword-tag">#よくある質問</span></a>
+                <!-- <a href="#other-treatments"><span class="keyword-tag">#トレチノインクリーム</span></a> -->
+                <!-- <a href="#other-treatments"><span class="keyword-tag">#ハイドロキノンクリーム</span></a> -->
+                <a href="#access"><span class="keyword-tag">#通いやすい</span></a>
+              </div>
+            </div>
+          </section>
+          <div class="section-cta">
+            <a href="tel:026-245-0126" class="cta-button">
+              <span class="cta-label">お電話でご予約・ご相談</span>
+              <span class="cta-tel">026-245-0126</span>
+            </a>
+          </div>
+        </div><!-- /data-tab-panel="hair" -->
+
+        <!-- しみ取りタブパネル：キーワード＋CTA -->
+        <div data-tab-panel="spot" hidden>
+          <section class="keywords section" style="background-color: #f5f5f3;">
+            <div class="container">
+              <p class="section-english-title">KEYWORD</p>
+              <h2 class="section-title">キーワードから探す</h2>
+              <div class="keyword-tags">
+                <a href="#pricing-spot"><span class="keyword-tag">#シミ取り料金</span></a>
+                <a href="#pricing-spot"><span class="keyword-tag">#ほくろ取り料金</span></a>
+                <a href="#flow-spot"><span class="keyword-tag">#治療の流れ</span></a>
+                <a href="#access"><span class="keyword-tag">#場所</span></a>
+                <a href="#pricing-spot"><span class="keyword-tag">#相談日時</span></a>
+                <a href="#doctors"><span class="keyword-tag">#医師について</span></a>
+                <a href="#laser-equipment-spot"><span class="keyword-tag">#レーザー機器</span></a>
+                <a href="#faq-spot"><span class="keyword-tag">#よくある質問</span></a>
+                <a href="#other-treatments-spot"><span class="keyword-tag">#トレチノインクリーム</span></a>
+                <a href="#other-treatments-spot"><span class="keyword-tag">#ハイドロキノンクリーム</span></a>
+                <a href="#access"><span class="keyword-tag">#通いやすい</span></a>
+              </div>
+            </div>
+          </section>
+          <div class="section-cta">
+            <a href="tel:026-245-0126" class="cta-button">
+              <span class="cta-label">お電話でご予約・ご相談</span>
+              <span class="cta-tel">026-245-0126</span>
+            </a>
+          </div>
+        </div><!-- /data-tab-panel="spot" -->
+
       </div>
     </section>
 
+    <!-- 脱毛タブパネル：フロー〜FAQ -->
+    <div data-tab-panel="hair">
+
     <!-- 施術の流れ -->
-    <section class="flow section">
+    <section class="flow section" id="flow" style="background-color: #f5f5f3;">
       <div class="container">
+        <p class="section-english-title">TREATMENT FLOW</p>
         <h2 class="section-title">ご利用の流れ</h2>
         <div class="flow-steps">
 
@@ -326,7 +408,7 @@
 
           <div class="flow-step">
             <div class="flow-number">2</div>
-            <h3 class="flow-title">初回相談（月曜日のみ）</h3>
+            <h3 class="flow-title">初回相談（月曜日）</h3>
             <p class="flow-text">医師が肌状態を確認し、施術内容をご説明します。<br><strong>初回相談料：無料</strong></p>
           </div>
 
@@ -346,9 +428,39 @@
       </div>
     </section>
 
-    <!-- 料金表 -->
-    <section class="pricing section">
+    <!-- 治療の流れ -->
+    <section class="treatment-procedure section" id="treatment-procedure">
       <div class="container">
+        <p class="section-english-title">TREATMENT PROCEDURE</p>
+        <h2 class="section-title">治療の流れ</h2>
+        <div class="flow-steps">
+
+          <div class="flow-step">
+            <div class="flow-number">1</div>
+            <h3 class="flow-title">レーザー照射前</h3>
+            <p class="flow-text">痛みを軽減させるため、照射前に保冷剤で冷やします。</p>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-number">2</div>
+            <h3 class="flow-title">レーザー照射</h3>
+            <p class="flow-text">ショット打ちの場合は、輪ゴムで弾かれるぐらいの痛みがあります。</p>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-number">3</div>
+            <h3 class="flow-title">レーザー照射後</h3>
+            <p class="flow-text">照射日は、化粧をしないで、日焼け止めクリームを塗布してください。<br>※軽い化粧はして帰れますので、必要な方は化粧品をご持参ください。</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 料金表 -->
+    <section class="pricing section" id="pricing">
+      <div class="container">
+        <p class="section-english-title">PRICING</p>
         <h2 class="section-title">料金のご案内</h2>
         <p class="section-lead">明瞭な料金設定で安心してご利用いただけます。</p>
 
@@ -409,61 +521,67 @@
                 <td>各9,240円</td>
               </tr>
               <tr>
-                <td>口ひげ（女性）</td>
+                <td>口ひげ<br>（女性）</td>
                 <td>5,500円</td>
                 <td>24,750円<br><span class="small-text">（4,950円）</span></td>
                 <td>3,850円</td>
               </tr>
               <tr>
-                <td>口ひげ（男性）</td>
+                <td>口ひげ<br>（男性）</td>
                 <td>6,600円</td>
                 <td>29,700円<br><span class="small-text">（5,940円）</span></td>
                 <td>4,620円</td>
               </tr>
               <tr>
-                <td>あご（女性）</td>
+                <td>あご<br>（女性）</td>
                 <td>5,500円</td>
                 <td>24,750円<br><span class="small-text">（4,950円）</span></td>
                 <td>3,850円</td>
               </tr>
               <tr>
-                <td>あご（男性）</td>
+                <td>あご<br>（男性）</td>
                 <td>6,600円</td>
                 <td>29,700円<br><span class="small-text">（5,940円）</span></td>
                 <td>4,620円</td>
               </tr>
               <tr>
-                <td>あご下（女性）</td>
+                <td>あご下<br>（女性）</td>
                 <td>5,500円</td>
                 <td>24,750円<br><span class="small-text">（4,950円）</span></td>
                 <td>3,850円</td>
               </tr>
               <tr>
-                <td>あご下（男性）</td>
+                <td>あご下<br>（男性）</td>
                 <td>6,600円</td>
                 <td>29,700円<br><span class="small-text">（5,940円）</span></td>
                 <td>4,620円</td>
               </tr>
               <tr>
-                <td>頬（ほほ）（女性）</td>
+                <td>頬<br>（女性）</td>
                 <td>5,500円</td>
                 <td>24,750円<br><span class="small-text">（4,950円）</span></td>
                 <td>3,850円</td>
               </tr>
               <tr>
-                <td>頬（ほほ）（男性）</td>
+                <td>頬<br>（男性）</td>
                 <td>6,600円</td>
                 <td>29,700円<br><span class="small-text">（5,940円）</span></td>
                 <td>4,620円</td>
               </tr>
               <tr>
-                <td>肘上・肘下<br>うなじ</td>
+                <td>肘上<br>肘下<br>うなじ</td>
                 <td>各7,350円</td>
                 <td>各34,650円<br><span class="small-text">（各6,930円）</span></td>
                 <td>各5,390円</td>
               </tr>
               <tr>
-                <td>ビキニライン<br>Vライン・Iライン（膣周囲）<br>Oライン（肛門周囲）</td>
+                <td>ビキニライン</td>
+                <td>6,300円</td>
+                <td>29,700円<br><span class="small-text">（5,940円）</span></td>
+                <td>4,620円</td>
+              </tr>
+              <tr>
+                <td>Vライン<br>Iライン<br>Oライン</td>
                 <td>各6,300円</td>
                 <td>各29,700円<br><span class="small-text">（各5,940円）</span></td>
                 <td>各4,620円</td>
@@ -502,6 +620,7 @@
             </tbody>
           </table>
         </div>
+        <p class="pricing-caption">※複数箇所の照射の場合、面積を合算いたします。</p>
 
         <!-- ほくろ取り料金 -->
         <h3 class="pricing-subtitle">ほくろ取り</h3>
@@ -541,8 +660,9 @@
     </section>
 
     <!-- シミ・ほくろ治療紹介 -->
-    <section class="other-treatments section">
+    <section class="other-treatments section" id="other-treatments" style="background-color: #f5f5f3;">
       <div class="container">
+        <p class="section-english-title">OTHER SERVICES</p>
         <h2 class="section-title">その他の美容医療</h2>
 
         <div class="treatment-cards">
@@ -555,13 +675,58 @@
             <h3 class="treatment-title">ほくろ除去</h3>
             <p class="treatment-text">レーザーによるほくろ除去も対応しております。大きさに応じた料金設定で、安心してご利用いただけます。</p>
           </div>
+
+          <div class="treatment-card">
+            <h3 class="treatment-title">トレチノインクリーム</h3>
+            <p class="treatment-text">難治性のニキビの治療薬として米国で認可された後、シワなどの紫外線による皮膚の老化にも効果が認められ多くの患者さんに皮膚の若返り治療薬として使用されています。
+              日本では正式に認可されていないのが現状ですが、当院では患者さんの症状に応じて独自のものを処方いたします。</p>
+          </div>
+
+          <div class="treatment-card">
+            <h3 class="treatment-title">ハイドロキノンクリーム</h3>
+            <p class="treatment-text">レーザーによるほくろ除去も対応しております。大きさに応じた料金設定で、安心してご利用いただけます。</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- よくある質問 -->
-    <section class="faq section">
+    <!-- レーザー機器紹介 -->
+    <section class="laser-equipment section" id="laser-equipment">
       <div class="container">
+        <p class="section-english-title">LASER EQUIPMENT</p>
+        <h2 class="section-title">レーザーの紹介</h2>
+
+        <div class="laser-carousel-wrapper">
+          <div class="laser-carousel">
+
+            <!-- 機器1: MeDioStar -->
+            <div class="laser-card">
+              <div class="laser-image-wrapper">
+                <img src="images/mediostar.webp" alt="asclepion社 MeDioStar" class="laser-image" loading="lazy">
+              </div>
+              <h3 class="laser-name">asclepion社 MeDioStar</h3>
+              <p class="laser-description">蓄熱式ダイオードレーザー脱毛機。痛みを抑えた施術が可能で、幅広い肌質・毛質に対応します。冷却機能により快適な施術を実現しています。</p>
+            </div>
+
+            <!-- 機器2: NanoStarR -->
+            <div class="laser-card">
+              <div class="laser-image-wrapper">
+                <img src="images/nanostarR.jpg" alt="asclepion社 NanoStarR" class="laser-image" loading="lazy">
+              </div>
+              <h3 class="laser-name">asclepion社 NanoStarR</h3>
+              <p class="laser-description">Qスイッチレーザーによるシミ取り専用機器。メラニン色素に選択的に反応し、周辺組織へのダメージを最小限に抑えます。</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- よくある質問 -->
+    <section class="faq section" id="faq">
+      <div class="container">
+        <p class="section-english-title">FAQ</p>
         <h2 class="section-title">よくあるご質問</h2>
 
         <div class="faq-list">
@@ -575,7 +740,7 @@
             <div class="faq-answer">
               <div class="faq-answer-inner">
                 <span class="faq-a">A</span>
-                <p>当院では蓄熱式脱毛機Mediostarを使用しており、従来の脱毛機より痛みを軽減しています。また、表面麻酔の使用も可能ですので、痛みが心配な方も安心して施術を受けていただけます。</p>
+                <p>当院では蓄熱式脱毛機Mediostarを使用しており、従来の脱毛機より痛みを軽減しています。また、施術前にアイスパックでよく冷やすので、それにより痛みが軽減されます。</p>
               </div>
             </div>
           </div>
@@ -631,7 +796,7 @@
             <div class="faq-answer">
               <div class="faq-answer-inner">
                 <span class="faq-a">A</span>
-                <p>15台分の駐車場をご用意しております。お車でお越しの際も安心してご利用いただけます。</p>
+                <p>病院正面に駐車場をご用意しております。お車でお越しの際も安心してご利用いただけます。</p>
               </div>
             </div>
           </div>
@@ -645,7 +810,7 @@
             <div class="faq-answer">
               <div class="faq-answer-inner">
                 <span class="faq-a">A</span>
-                <p>当院は完全予約制です。お電話でご予約の上、ご来院ください。初回相談は月曜日のみ、施術は平日に行っております。</p>
+                <p>当院は完全予約制です。お電話でご予約の上、ご来院ください。初回相談は月曜日のみ、施術は平日に行っております。相談日にそのまま施術をご希望される場合は、予約時にその旨をお伝え下さい。</p>
               </div>
             </div>
           </div>
@@ -673,7 +838,21 @@
             <div class="faq-answer">
               <div class="faq-answer-inner">
                 <span class="faq-a">A</span>
-                <p>表面麻酔の使用が可能です。痛みに不安がある方は、初回相談時にご相談ください。</p>
+                <p>当院では表面麻酔は実施していません。どうしても痛みが不安な方は医師にご相談ください。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span class="faq-q">Q</span>
+              <span class="faq-question-text">お支払い方法を教えて下さい</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <span class="faq-a">A</span>
+                <p>現金払い、クレジットカード、EAONPAYからお選びいただけます。</p>
               </div>
             </div>
           </div>
@@ -690,9 +869,391 @@
       </div>
     </section>
 
-    <!-- 医師・体制紹介 -->
-    <section class="doctors section">
+    </div><!-- /data-tab-panel="hair" -->
+
+    <!-- しみ取りタブパネル：フロー〜FAQ -->
+    <div data-tab-panel="spot" hidden>
+
+    <!-- 施術の流れ -->
+    <section class="flow section" id="flow-spot" style="background-color: #f5f5f3;">
       <div class="container">
+        <p class="section-english-title">TREATMENT FLOW</p>
+        <h2 class="section-title">ご利用の流れ</h2>
+        <div class="flow-steps">
+
+          <div class="flow-step">
+            <div class="flow-number">1</div>
+            <h3 class="flow-title">お電話でご予約</h3>
+            <p class="flow-text">まずはお電話でご予約ください。<br>電話：<a href="tel:026-245-0126" class="flow-tel">026-245-0126</a></p>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-number">2</div>
+            <h3 class="flow-title">初回相談（月曜日）</h3>
+            <p class="flow-text">医師が肌状態を確認し、施術内容をご説明します。<br><strong>初回相談料：無料</strong></p>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-number">3</div>
+            <h3 class="flow-title">施術日予約（平日）</h3>
+            <p class="flow-text">ご都合に合わせて施術日をご予約いただきます。<br>施術後相談料：1,100円</p>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-number">4</div>
+            <h3 class="flow-title">施術開始</h3>
+            <p class="flow-text">定期的に通院いただき、施術を続けます。効果を実感できるまで丁寧にサポートいたします。</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 治療の流れ -->
+    <section class="treatment-procedure section" id="treatment-procedure-spot">
+      <div class="container">
+        <p class="section-english-title">TREATMENT PROCEDURE</p>
+        <h2 class="section-title">治療の流れ</h2>
+        <div class="flow-steps">
+
+          <div class="flow-step">
+            <div class="flow-number">1</div>
+            <h3 class="flow-title">レーザー照射前</h3>
+            <p class="flow-text">痛みを軽減させるため、施術範囲に麻酔の注射をします。</p>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-number">2</div>
+            <h3 class="flow-title">レーザー照射</h3>
+            <p class="flow-text">輪ゴムで弾かれるぐらいの痛みがあります。</p>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-number">3</div>
+            <h3 class="flow-title">レーザー照射後</h3>
+            <p class="flow-text">照射日は、化粧をしないで、日焼け止めクリームを塗布してください。肌の色と同じテープを貼ってご帰宅いただきます。<br>※軽い化粧はして帰れますので、必要な方は化粧品をご持参ください。</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 料金表 -->
+    <section class="pricing section" id="pricing-spot">
+      <div class="container">
+        <p class="section-english-title">PRICING</p>
+        <h2 class="section-title">料金のご案内</h2>
+        <p class="section-lead">明瞭な料金設定で安心してご利用いただけます。</p>
+
+        <!-- 相談料 -->
+        <div class="pricing-consultation">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th>相談料</th>
+                <th>料金</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>初回相談料</td>
+                <td><strong>無料</strong></td>
+              </tr>
+              <tr>
+                <td>実施後相談料</td>
+                <td>1,100円</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- シミ取り料金 -->
+        <h3 class="pricing-subtitle">シミ取り（Asclepion社 NanostarR使用）</h3>
+        <div class="pricing-table-wrapper">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th>レーザー照射（1回の費用）</th>
+                <th>料金</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1照射（直径5mm）</td>
+                <td>1,100円</td>
+              </tr>
+              <tr>
+                <td>1cm×1cm</td>
+                <td>8,800円</td>
+              </tr>
+              <tr>
+                <td>3cm×3cm</td>
+                <td>33,000円</td>
+              </tr>
+              <tr>
+                <td>顔全体（5cm×5cm）</td>
+                <td>99,000円</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="pricing-caption">※複数箇所の照射の場合、面積を合算いたします。</p>
+
+        <!-- ほくろ取り料金 -->
+        <h3 class="pricing-subtitle">ほくろ取り</h3>
+        <div class="pricing-table-wrapper">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th>サイズ</th>
+                <th>料金</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>直径3mm以下</td>
+                <td>13,200円</td>
+              </tr>
+              <tr>
+                <td>直径4mm以上</td>
+                <td>22,000円</td>
+              </tr>
+              <tr>
+                <td>レーザー切除後ケア再発時（1カ所）</td>
+                <td>3,300円</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- CTA（料金表セクション後） -->
+        <div class="section-cta">
+          <a href="tel:026-245-0126" class="cta-button">
+            <span class="cta-label">料金のご相談はこちら</span>
+            <span class="cta-tel">026-245-0126</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- シミ・ほくろ治療紹介 -->
+    <section class="other-treatments section" id="other-treatments-spot" style="background-color: #f5f5f3;">
+      <div class="container">
+        <p class="section-english-title">OTHER SERVICES</p>
+        <h2 class="section-title">その他の美容医療</h2>
+
+        <div class="treatment-cards">
+          <div class="treatment-card">
+            <h3 class="treatment-title">シミ取りレーザー</h3>
+            <p class="treatment-text">Asclepion社 NanostarRを使用したシミ取り治療を行っております。気になるシミを効果的に除去します。詳しくは診察時にご相談ください。</p>
+          </div>
+
+          <div class="treatment-card">
+            <h3 class="treatment-title">ほくろ除去</h3>
+            <p class="treatment-text">レーザーによるほくろ除去も対応しております。大きさに応じた料金設定で、安心してご利用いただけます。</p>
+          </div>
+
+          <div class="treatment-card">
+            <h3 class="treatment-title">トレチノインクリーム</h3>
+            <p class="treatment-text">難治性のニキビの治療薬として米国で認可された後、シワなどの紫外線による皮膚の老化にも効果が認められ多くの患者さんに皮膚の若返り治療薬として使用されています。
+              日本では正式に認可されていないのが現状ですが、当院では患者さんの症状に応じて独自のものを処方いたします。</p>
+          </div>
+
+          <div class="treatment-card">
+            <h3 class="treatment-title">ハイドロキノンクリーム</h3>
+            <p class="treatment-text">レーザーによるほくろ除去も対応しております。大きさに応じた料金設定で、安心してご利用いただけます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- レーザー機器紹介 -->
+    <section class="laser-equipment section" id="laser-equipment-spot">
+      <div class="container">
+        <p class="section-english-title">LASER EQUIPMENT</p>
+        <h2 class="section-title">レーザーの紹介</h2>
+
+        <div class="laser-carousel-wrapper">
+          <div class="laser-carousel">
+
+            <!-- 機器1: MeDioStar -->
+            <div class="laser-card">
+              <div class="laser-image-wrapper">
+                <img src="images/mediostar.webp" alt="asclepion社 MeDioStar" class="laser-image" loading="lazy">
+              </div>
+              <h3 class="laser-name">asclepion社 MeDioStar</h3>
+              <p class="laser-description">蓄熱式ダイオードレーザー脱毛機。痛みを抑えた施術が可能で、幅広い肌質・毛質に対応します。冷却機能により快適な施術を実現しています。</p>
+            </div>
+
+            <!-- 機器2: NanoStarR -->
+            <div class="laser-card">
+              <div class="laser-image-wrapper">
+                <img src="images/nanostarR.jpg" alt="asclepion社 NanoStarR" class="laser-image" loading="lazy">
+              </div>
+              <h3 class="laser-name">asclepion社 NanoStarR</h3>
+              <p class="laser-description">Qスイッチレーザーによるシミ取り専用機器。メラニン色素に選択的に反応し、周辺組織へのダメージを最小限に抑えます。</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- よくある質問 -->
+    <section class="faq section" id="faq-spot">
+      <div class="container">
+        <p class="section-english-title">FAQ</p>
+        <h2 class="section-title">よくあるご質問</h2>
+
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span class="faq-q">Q</span>
+              <span class="faq-question-text">痛みはどの程度ですか？</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <span class="faq-a">A</span>
+                <p>輪ゴムで弾くぐらいの痛みがあります。施術範囲を麻酔するので、痛みが心配な方も安心して施術を受けていただけます。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span class="faq-q">Q</span>
+              <span class="faq-question-text">何回くらい通えば効果が出ますか？</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <span class="faq-a">A</span>
+                <p>個人差があります。1回で効果がある方もいれば、間隔をおいて2〜3回施術する場合もあります。初回相談時に医師が詳しくご説明いたします。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span class="faq-q">Q</span>
+              <span class="faq-question-text">ダウンタイムはどれぐらいですか？</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <span class="faq-a">A</span>
+                <p>個人差があります。おおよそ2週間程度でかさぶたが剥がれてきます。まだ肌が敏感なので、日焼けには特に気をつけてください。</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              <span class="faq-q">Q</span>
+              <span class="faq-question-text">未成年でも受けられますか？</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <span class="faq-a">A</span>
+                <p>保護者の方の同意があれば、未成年の方も施術を受けられます。初回相談時に保護者の方とご一緒にお越しください。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span class="faq-q">Q</span>
+              <span class="faq-question-text">子連れで通院できますか？</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <span class="faq-a">A</span>
+                <p>お子様連れでのご来院も可能です。事前にお電話でご相談いただければ、スムーズにご案内できます。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span class="faq-q">Q</span>
+              <span class="faq-question-text">駐車場はありますか？</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <span class="faq-a">A</span>
+                <p>病院正面に駐車場をご用意しております。お車でお越しの際も安心してご利用いただけます。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span class="faq-q">Q</span>
+              <span class="faq-question-text">予約は必要ですか？</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <span class="faq-a">A</span>
+                <p>当院は完全予約制です。お電話でご予約の上、ご来院ください。現在のところ、相談・施術ともに月曜日のみとなっております。相談日にそのまま施術をご希望される場合は、予約時にその旨をお伝え下さい。</p>
+              </div>
+            </div>
+          </div>
+
+        
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span class="faq-q">Q</span>
+              <span class="faq-question-text">麻酔は使えますか？</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <span class="faq-a">A</span>
+                <p>施術範囲に麻酔の注射をします。痛みが不安な方は医師にご相談ください。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span class="faq-q">Q</span>
+              <span class="faq-question-text">お支払い方法を教えて下さい</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <span class="faq-a">A</span>
+                <p>現金払い、クレジットカード、EAON PAYからお選びいただけます。</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CTA（FAQ後） -->
+        <div class="section-cta">
+          <a href="tel:026-245-0126" class="cta-button">
+            <span class="cta-label">その他のご質問はお電話で</span>
+            <span class="cta-tel">026-245-0126</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    </div><!-- /data-tab-panel="spot" -->
+
+    <!-- 医師・体制紹介 -->
+    <section class="doctors section" id="doctors" style="background-color: #f5f5f3;">
+      <div class="container">
+        <p class="section-english-title">OUR DOCTORS</p>
         <h2 class="section-title">医師紹介</h2>
         <p class="section-lead">専門医による監修・在籍体制で安心の医療脱毛を提供します。</p>
 
@@ -703,7 +1264,7 @@
             </div>
             <div class="doctor-info">
               <h3 class="doctor-name">形成外科専門医</h3>
-              <p class="doctor-title">監修医師</p>
+              <p class="doctor-title">医師</p>
               <p class="doctor-affiliation">山梨大学形成外科</p>
               <p class="doctor-text">形成外科専門医として、医療脱毛の監修を行っております。</p>
             </div>
@@ -724,8 +1285,9 @@
     </section>
 
     <!-- アクセス・施設情報 -->
-    <section class="access section">
+    <section class="access section" id="access">
       <div class="container">
+        <p class="section-english-title">ACCESS</p>
         <h2 class="section-title">アクセス</h2>
 
         <div class="access-content">
@@ -793,7 +1355,7 @@
     </section>
 
     <!-- 最終CTA -->
-    <section class="final-cta section">
+    <section class="final-cta section" id="final-cta">
       <div class="container">
         <h2 class="section-title">まずはお気軽にご相談ください</h2>
         <p class="final-cta-text">須坂市で医療脱毛をお考えの方は、医療法人公仁会 轟病院へお気軽にご相談ください。<br>形成外科専門医監修、皮膚科専門医在籍で安心の医療脱毛を提供いたします。</p>
@@ -836,6 +1398,12 @@
         <span class="fixed-cta-tel">026-245-0126</span>
       </span>
     </a>
+  </div>
+
+  <!-- SPフローティングタブ -->
+  <div class="float-tabs" id="float-tabs" aria-hidden="true">
+    <button class="float-tab float-tab--hair" data-tab="hair">脱毛</button>
+    <button class="float-tab float-tab--spot" data-tab="spot">シミ取り</button>
   </div>
 
   <!-- JavaScript -->
@@ -910,6 +1478,69 @@
             });
           }
         });
+      });
+
+      // サービスタブ切り替え（共通処理）
+      const serviceTabs = document.querySelectorAll('.service-tab');
+      const floatTabEl = document.getElementById('float-tabs');
+      const floatTabBtns = document.querySelectorAll('.float-tab');
+
+      function switchTab(selected) {
+        // デスクトップタブのアクティブ切り替え
+        serviceTabs.forEach(function(t) {
+          t.classList.toggle('active', t.dataset.tab === selected);
+        });
+        // フローティングタブのアクティブ切り替え
+        floatTabBtns.forEach(function(t) {
+          t.classList.toggle('is-active', t.dataset.tab === selected);
+        });
+        // パネル表示切り替え
+        document.querySelectorAll('[data-tab-panel]').forEach(function(panel) {
+          if (panel.dataset.tabPanel === selected) {
+            panel.removeAttribute('hidden');
+          } else {
+            panel.setAttribute('hidden', '');
+          }
+        });
+        // テーマカラー切り替え
+        if (selected === 'spot') {
+          document.documentElement.dataset.theme = 'spot';
+        } else {
+          delete document.documentElement.dataset.theme;
+        }
+      }
+
+      // デスクトップタブのクリック
+      serviceTabs.forEach(function(tab) {
+        tab.addEventListener('click', function() {
+          switchTab(this.dataset.tab);
+        });
+      });
+
+      // フローティングタブのクリック
+      floatTabBtns.forEach(function(tab) {
+        tab.addEventListener('click', function() {
+          switchTab(this.dataset.tab);
+        });
+      });
+
+      // SPフローティングタブの表示・非表示（スクロール停止後2秒で消える）
+      var floatTabTimer = null;
+      function showFloatTabs() {
+        if (!floatTabEl) return;
+        floatTabEl.classList.add('is-visible');
+        floatTabEl.setAttribute('aria-hidden', 'false');
+        clearTimeout(floatTabTimer);
+        floatTabTimer = setTimeout(function() {
+          floatTabEl.classList.remove('is-visible');
+          floatTabEl.setAttribute('aria-hidden', 'true');
+        }, 2000);
+      }
+      window.addEventListener('scroll', showFloatTabs, { passive: true });
+
+      // 初期アクティブ状態をフローティングタブにも反映
+      floatTabBtns.forEach(function(t) {
+        t.classList.toggle('is-active', t.dataset.tab === 'hair');
       });
 
       // FAQアコーディオン
