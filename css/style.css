@@ -1616,11 +1616,11 @@ button {
 ======================================== */
 .final-cta {
   background: var(--gradient-hero);
-  color: var(--color-bg-white);
+  color: var(--color-primary);
 }
 
 .final-cta .section-title {
-  color: var(--color-bg-white);
+  color: var(--color-text-primary);
 }
 
 .final-cta-text {
@@ -1633,7 +1633,7 @@ button {
 .final-cta-box {
   max-width: 37.5rem;
   margin: 0 auto;
-  background-color: var(--color-bg-white);
+  background-color: var(--color-cta);
   padding: var(--spacing-lg);
   border-radius: var(--radius-card);
   box-shadow: 0 0.25rem 1.25rem rgba(61, 56, 52, 0.15);
@@ -1643,7 +1643,7 @@ button {
 .final-cta-label {
   font-size: 1.125rem;
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-bg-white);
   margin-bottom: var(--spacing-sm);
 }
 
@@ -1657,7 +1657,7 @@ button {
   display: block;
   font-size: 2rem;
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-bg-white);
   margin-bottom: var(--spacing-sm);
   transition: opacity 0.3s ease;
 }
@@ -1674,14 +1674,14 @@ button {
 
 .final-cta-hours {
   font-size: 0.875rem;
-  color: var(--color-text-light);
+  color: var(--color-bg-white);
 }
 
 /* ========================================
    Footer（フッター）
 ======================================== */
 .footer {
-  background-color: var(--color-text);
+  background-color: var(--color-cta);
   color: var(--color-bg-white);
   padding: var(--spacing-lg) 0 var(--spacing-md);
 }
@@ -1715,7 +1715,7 @@ button {
 }
 
 .footer-address a {
-  color: var(--color-bg-white);
+  color: var(--color-text-primary);
   text-decoration: underline;
 }
 
