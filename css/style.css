@@ -71,7 +71,7 @@
   /* スペーシング（Felissimo風の呼吸感ある余白） */
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
-  --spacing-sm-th: 1rem 0.7rem;
+  --spacing-sm-th: 0.9rem 0.6rem;
   --spacing-md: 1.5rem;
   --spacing-block: 3rem;
   --spacing-element: 1.5rem;
@@ -585,7 +585,7 @@ button {
 
   }
   .hero-text p{
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 0.8rem;
   }
@@ -934,7 +934,7 @@ button {
 }
 
 .feature-title {
-  font-size: 1.25rem;
+  font-size: 1.45rem;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: var(--letter-spacing-japanese);
@@ -949,10 +949,10 @@ button {
 }
 
 .feature-text {
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.8;
   letter-spacing: var(--letter-spacing-japanese);
-  color: var(--color-text-secondary);
+  color: var(--color-text-primary);
 }
 
 /* ========================================
@@ -967,7 +967,7 @@ button {
 
 .flow-step {
   background-color: #FFFFFF;
-  padding: 2.5rem 1.5rem;
+  padding: 1.5rem 2rem;
   margin-bottom: var(--spacing-md);
   border-radius: var(--radius-card);
   border: 0.0625rem solid var(--color-border);
@@ -976,6 +976,7 @@ button {
   gap: 0.7rem;
   align-items: center;
   transition: border-color 0.3s ease;
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {
@@ -1006,7 +1007,7 @@ button {
 }
 
 .flow-title {
-  font-size: 0.875rem; /* 18px → 20px (Notion風) */
+  font-size: 1.25rem; /* 18px → 20px (Notion風) */
   font-weight: var(--font-weight-semibold); /* 600 (Notion風) */
   line-height: 1.4;
   letter-spacing: var(--letter-spacing-normal); /* -0.01em */
@@ -1023,7 +1024,7 @@ button {
 
 
 .flow-text {
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   line-height: var(--line-height-body); /* 1.9 (Notion風) */
   letter-spacing: var(--letter-spacing-wide); /* 0.01em */
   color: var(--color-text);
@@ -1084,9 +1085,10 @@ button {
   background-color: #FFFFFF;
   box-shadow: none;
   border: 0.0625rem solid var(--color-border);
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   border-radius: var(--radius-table);
   overflow: hidden;
+  font-weight: 400;
 }
 
 @media (min-width: 768px) {
@@ -1172,6 +1174,7 @@ button {
   font-size: 1.25rem; /* 18px → 20px (Notion風) */
   font-weight: var(--font-weight-semibold); /* 600 (Notion風) */
   line-height: 1.4;
+  text-align: center;
   letter-spacing: var(--letter-spacing-normal); /* -0.01em */
   margin-bottom: var(--spacing-sm);
   color: var(--color-primary);
@@ -1915,7 +1918,7 @@ body {
 
   /* 現在表示中のタブは薄く（押せないことを示す） */
   .float-tab.is-active {
-    opacity: 0.4;
+    opacity: 0.5;
     cursor: default;
     pointer-events: none;
   }
@@ -1932,7 +1935,7 @@ body {
     pointer-events: none;
     z-index: 500;
     opacity: 0;
-    transition: opacity 0.8s ease;
+    transition: opacity 1s ease;
   }
 
   .float-tabs.is-visible {
