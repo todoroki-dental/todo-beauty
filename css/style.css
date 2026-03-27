@@ -387,7 +387,7 @@ button {
 }
 
 .hamburger.active .hamburger-line:nth-child(1) {
-  transform: translateY(9.5px) rotate(45deg);
+  transform: translateY(0.5938rem) rotate(405deg);
 }
 
 .hamburger.active .hamburger-line:nth-child(2) {
@@ -395,7 +395,7 @@ button {
 }
 
 .hamburger.active .hamburger-line:nth-child(3) {
-  transform: translateY(-9.5px) rotate(-45deg);
+  transform: translateY(-0.5938rem) rotate(-405deg);
 }
 
 /* モバイルメニュー */
@@ -1029,6 +1029,16 @@ button {
   letter-spacing: var(--letter-spacing-wide); /* 0.01em */
   color: var(--color-text);
 }
+
+.flow-text span {
+  font-weight: 600;
+  
+}
+
+#downtime-spot {
+  background-color: #E6E6E6;
+}
+
 
 .flow-tel {
   color: var(--color-primary);
