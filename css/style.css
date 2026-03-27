@@ -43,7 +43,7 @@
   /* 日本語見出し */
   --font-size-h1-sp: 2rem;
   --font-size-h1-pc: 3rem;
-  --font-size-h2-sp: 1.75rem;
+  --font-size-h2-sp: 1.95rem;
   --font-size-h2-pc: 2.25rem;
   --font-size-h3-sp: 1.25rem;
   --font-size-h3-pc: 1.5rem;
@@ -81,7 +81,7 @@
 
   /* 角丸 */
   --radius-button: 3.125rem;
-  --radius-card: 1rem;
+  --radius-card: 0.7rem;
   --radius-table: 0.75rem;
   --radius-image: 1rem;
   --radius-category-icon: 50%;
@@ -1003,7 +1003,7 @@ button {
   justify-content: center;
   font-size: 1.5rem;
   font-weight: 700;
-  box-shadow: 0 0.125rem 0.75rem rgba(201, 168, 117, 0.3);
+  box-shadow: 0 0.125rem 0.4rem rgba(201, 168, 117, 0.3);
 }
 
 .flow-title {
