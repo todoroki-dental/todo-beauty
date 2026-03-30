@@ -1251,7 +1251,7 @@ button {
 /* PC: 2列グリッド */
 @media (min-width: 768px) {
   .laser-carousel {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     overflow-x: visible;
     scroll-snap-type: none;
   }
