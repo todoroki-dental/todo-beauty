@@ -1150,6 +1150,11 @@ button {
   }
 }
 
+.treatment-cards + .section-lead {
+  margin-top: var(--spacing-md);
+  margin-bottom: 0;
+}
+
 .treatment-card {
   background-color: #FFFFFF;
   padding: 2.5rem;
